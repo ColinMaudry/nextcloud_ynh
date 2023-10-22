@@ -170,7 +170,8 @@ ynh_script_progression --message="Upgrading PHP-FPM configuration..." --weight=2
 # Recreate a dedicated PHP-FPM config
 ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
 
-phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+# phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+phpversion=8.0
 
 #=================================================
 # NGINX CONFIGURATION
